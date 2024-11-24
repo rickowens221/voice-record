@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расширенная Запись Аудио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Расширенная Запись Аудио</h1>
+        <div class="controls">
+            <button id="startBtn">Начать запись</button>
+            <button id="stopBtn" disabled>Остановить запись</button>
+            <span id="recordingIndicator" class="hidden">● Запись...</span>
+            <span id="recordingTimer" class="hidden">00:00</span>
+        </div>
+        <audio id="audioPlayback" controls class="hidden"></audio>
+        <a id="downloadBtn" class="hidden">Скачать запись</a>
+        <h2>Список Записей</h2>
+        <ul id="recordingsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

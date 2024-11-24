@@ -1,0 +1,131 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #218838;
+}
+
+#stopBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#stopBtn:hover {
+    background-color: #c82333;
+}
+
+#downloadBtn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#downloadBtn:hover {
+    background-color: #0069d9;
+}
+
+.hidden {
+    display: none;
+}
+
+#recordingIndicator {
+    color: #dc3545;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#recordingTimer {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555555;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#recordingsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recordingsList li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#recordingsList li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#recordingsList li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #downloadBtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
